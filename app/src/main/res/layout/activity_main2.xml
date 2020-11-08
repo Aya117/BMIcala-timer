@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/watch"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/edtminute"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+      android:layout_marginLeft="@android:dimen/app_icon_size"
+        android:hint="minute"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@android:dimen/app_icon_size"
+        android:text="00:00:00"
+        android:textSize="20pt"
+        android:layout_marginTop="150dp"
+        />
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="@android:dimen/thumbnail_width"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginBottom="400dp"
+        android:drawableLeft="@android:drawable/ic_media_play"
+        android:onClick="btnStartOnClick"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@android:dimen/thumbnail_width"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginBottom="400dp"
+        android:drawableLeft="@android:drawable/checkbox_off_background"
+        android:onClick="btnStopOnClick"
+        android:text="stop" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@android:dimen/thumbnail_width"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="400dp"
+        android:layout_marginBottom="500dp"
+        android:drawableLeft="@android:drawable/ic_menu_rotate"
+        android:onClick="btnResetOnClick"
+        android:text="reset" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="204dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="btngoOnClick"
+        android:text="go to calculate BMI" />
+
+</RelativeLayout>

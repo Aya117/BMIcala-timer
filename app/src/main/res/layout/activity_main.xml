@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@drawable/bmis"
+    tools:context=".MainActivity">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Height"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/edtheight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Weight"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/edtWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+    </TableRow>
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:entries="@array/gender" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remember me"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="btnSaveOnClick"
+        android:text="save and calculate BMI"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/edtBMI"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#9C1111" />
+
+    <Button
+        android:id="@+id/btnTime"
+        android:drawableLeft="@android:drawable/ic_menu_recent_history"
+        android:onClick="btnTimer"
+        android:text="Go To Timer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+</TableLayout>
